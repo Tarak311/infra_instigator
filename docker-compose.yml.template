@@ -1,0 +1,10 @@
+version: "2"
+services:
+  users:
+    build:
+            context: ./users   
+    container_name: users
+    ports:
+    - 8800:8081
+    restart: always
+    
